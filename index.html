@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unsolved-style Demo — Your Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optional: MathJax for math rendering -->
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">YourProject</a>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Questions</a>
+        <a href="#">Contribute</a>
+        <a href="#">Contact</a>
+        <a href="#" class="cite">Cite</a>
+      </nav>
+      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Unsolved Questions — inspired demo</h1>
+          <p class="lead">A curated collection of challenging, unsolved questions across topics. Build, evaluate, and track model answers over time.</p>
+          <div class="stats">
+            <div><strong id="totalQs">500</strong><span>Total Questions</span></div>
+            <div><strong id="models">9</strong><span>Models Evaluated</span></div>
+            <div><strong id="solved">10</strong><span>Questions Solved</span></div>
+          </div>
+        </div>
+        <div class="leaderboard-card" aria-labelledby="leaderboardTitle">
+          <h2 id="leaderboardTitle">Model Leaderboard</h2>
+          <ol id="leaderboardList" class="leaderboard-list">
+            <li><strong>Model A</strong><span>88 / 500 (17.6%)</span></li>
+            <li><strong>Model B</strong><span>75 / 500 (15.0%)</span></li>
+            <li><strong>Model C</strong><span>44 / 500 (8.8%)</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters wrap">
+      <div class="tabs" role="tablist" aria-label="Categories">
+        <button class="tab active" data-cat="all">All</button>
+        <button class="tab" data-cat="tech">Technology</button>
+        <button class="tab" data-cat="science">Science</button>
+        <button class="tab" data-cat="math">Mathematics</button>
+        <button class="tab" data-cat="culture">Culture</button>
+      </div>
+
+      <div class="search">
+        <input id="qSearch" type="search" placeholder="Search questions, tags, authors..." />
+      </div>
+    </section>
+
+    <section class="questions wrap" id="questions">
+      <!-- Question cards will be injected by JS -->
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> YourProject • Built with original content — do not copy other sites.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
