@@ -96,8 +96,13 @@ function renderLeaderboard() {
   tbody.innerHTML = '';
   leaderboardData.forEach(row => {
     const tr = document.createElement('tr');
+    let rankDisplay = row.rank;
+    if (row.rank === 1) rankDisplay = '🥇';
+    else if (row.rank === 2) rankDisplay = '🥈';
+    else if (row.rank === 3) rankDisplay = '🥉';
+
     tr.innerHTML = `
-      <td>${row.rank}</td>
+      <td>${rankDisplay}</td>
       <td><strong>${row.model}</strong></td>
       <td>${row.poetry}</td>
       <td>${row.numerical}</td>

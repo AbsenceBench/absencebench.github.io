@@ -88,10 +88,11 @@
   .leaderboard-card h2{font-size:1.4rem;margin:0 0 0.3rem 0}
   .card-subtitle{color:var(--muted);font-size:0.85rem;margin-bottom:1.2rem}
   .leaderboard-list{list-style:none;padding:0;margin:0 0 1rem 0}
-  .leaderboard-list li{display:flex;justify-content:space-between;padding:0.7rem 0;border-bottom:1px solid var(--border)}
+  .leaderboard-list li{display:flex;align-items:center;gap:0.6rem;padding:0.7rem 0;border-bottom:1px solid var(--border)}
   .leaderboard-list li:last-child{border:none}
-  .leaderboard-list strong{color:var(--navy)}
-  .leaderboard-list span{color:var(--orange);font-weight:600}
+  .leaderboard-list .rank-display{min-width:1.5rem;text-align:left;font-size:1rem}
+  .leaderboard-list strong{color:var(--navy);flex:1;text-align:left}
+  .leaderboard-list span:last-child{color:var(--orange);font-weight:600;margin-left:auto}
   .view-full{color:var(--accent-light);text-decoration:none;font-size:0.9rem;font-weight:500}
   .view-full:hover{text-decoration:underline}
   /* About Section */
