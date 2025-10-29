@@ -14,7 +14,7 @@
     <div class="wrap">
       <a class="brand" href="#">
         <span class="brand-logo">AbsenceBench</span>
-        <span class="brand-separator">:</span>
+        <span class="brand-separator"></span>
         <span class="brand-title">Language Models Can't Tell What's Missing</span>
       </a>
       <div class="header-right">
@@ -26,7 +26,7 @@
     </div>
     <div class="header-bottom wrap">
       <div class="header-links">
-        <a href="https://arxiv.org/pdf/2506.11440" target="_blank" rel="noopener" class="header-btn">
+        <a href="https://arxiv.org/abs/2506.11440" target="_blank" rel="noopener" class="header-btn">
           <span class="btn-icon">📄</span> Paper
         </a>
         <a href="https://github.com/harvey-fin/absence-bench" target="_blank" rel="noopener" class="header-btn">
@@ -53,12 +53,12 @@
           <h1>Language Models Can't Tell What's Missing</h1>
           <p class="lead"><span class="brand-name">AbsenceBench</span> is a benchmark for evaluating how well language models can identify and reason about missing information in text—revealing fundamental gaps in model comprehension.</p>
           <div class="stats">
-            <div><strong id="totalQs">1,200+</strong><span>Test Examples</span></div>
-            <div><strong id="models">12</strong><span>Models Evaluated</span></div>
-            <div><strong id="tasks">5</strong><span>Task Categories</span></div>
+            <div><strong id="totalQs">4,300+</strong><span>Test Examples</span></div>
+            <div><strong id="models">14</strong><span>Models Evaluated</span></div>
+            <div><strong id="tasks">3</strong><span>Task Categories</span></div>
           </div>
           <div class="hero-links">
-            <a href="https://arxiv.org/pdf/2506.11440" target="_blank" rel="noopener" class="btn btn-primary">Read Paper</a>
+            <a href="https://arxiv.org/abs/2506.11440" target="_blank" rel="noopener" class="btn btn-primary">Read Paper</a>
             <a href="https://huggingface.co/datasets/harveyfin/AbsenceBench" target="_blank" rel="noopener" class="btn btn-secondary">View Dataset</a>
             <a href="https://github.com/harvey-fin/absence-bench" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
           </div>
@@ -82,16 +82,14 @@
       <div class="about-grid">
         <div class="about-card">
           <h3>The Challenge</h3>
-          <p>While language models excel at processing explicit information, they struggle with a fundamental aspect of comprehension: identifying what's missing. AbsenceBench tests models' ability to detect gaps, omissions, and absent context in text.</p>
+          <p>While language models excel at processing explicit information, they struggle with a fundamental aspect of comprehension: identifying what's missing. <span class="brand-name">AbsenceBench</span> tests models' ability to detect gaps, omissions, and absent context in text.</p>
         </div>
         <div class="about-card">
-          <h3>Five Task Categories</h3>
+          <h3>Three Task Categories</h3>
           <ul class="task-list">
-            <li><strong>Missing Arguments:</strong> Identifying incomplete function calls or missing parameters</li>
-            <li><strong>Missing Context:</strong> Detecting when crucial background information is absent</li>
-            <li><strong>Missing Steps:</strong> Finding gaps in procedural instructions</li>
-            <li><strong>Missing Definitions:</strong> Recognizing undefined terms or concepts</li>
-            <li><strong>Missing Comparisons:</strong> Identifying incomplete comparisons or references</li>
+            <li><strong>Poetry:</strong> Find the missing lines in a recitation of a poem</li>
+            <li><strong>Numerical Sequences:</strong> Detecting when a number in a sequence is absent</li>
+            <li><strong>GitHub Pull Requests:</strong> Identify missing lines within a PR's diff</li>
           </ul>
         </div>
         <div class="about-card">
@@ -105,10 +103,9 @@
       <h2>Example Tasks</h2>
       <div class="tabs" role="tablist" aria-label="Task Categories">
         <button class="tab active" data-cat="all">All Tasks</button>
-        <button class="tab" data-cat="arguments">Missing Arguments</button>
-        <button class="tab" data-cat="context">Missing Context</button>
-        <button class="tab" data-cat="steps">Missing Steps</button>
-        <button class="tab" data-cat="definitions">Missing Definitions</button>
+        <button class="tab" data-cat="poetry">Poetry</button>
+        <button class="tab" data-cat="numerical">Numerical Sequences</button>
+        <button class="tab" data-cat="github">GitHub PRs</button>
       </div>
     </section>
 
@@ -147,17 +144,18 @@
       </div>
       <div class="footer-section" id="cite">
         <h4>Citation</h4>
-        <pre class="citation">@article{fu2025absencebench,
-  title={Language Models Can't Tell What's Missing},
-  author={Fu, Harvey Yiyun and Shrivastava, Aryan and Moore, Jared and West, Peter and Tan, Chenhao and Holtzman, Ari},
-  journal={arXiv preprint arXiv:2506.11440},
-  year={2025}
+        <pre class="citation">@inproceedings{fu2025absence,
+title={Absence Bench: Language Models Can{\textquoteright}t See What{\textquoteright}s Missing},
+author={Harvey Yiyun Fu and Aryan Shrivastava and Jared Moore and Peter West and Chenhao Tan and Ari Holtzman},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+year={2025},
+url={https://arxiv.org/abs/2506.11440}
 }</pre>
       </div>
       <div class="footer-section">
         <h4>Links</h4>
         <ul class="footer-links">
-          <li><a href="https://arxiv.org/pdf/2506.11440" target="_blank" rel="noopener">Paper</a></li>
+          <li><a href="https://arxiv.org/abs/2506.11440" target="_blank" rel="noopener">Paper</a></li>
           <li><a href="https://huggingface.co/datasets/harveyfin/AbsenceBench" target="_blank" rel="noopener">Dataset</a></li>
           <li><a href="https://github.com/harvey-fin/absence-bench" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="mailto:harveyfin@uchicago.edu">Contact</a></li>

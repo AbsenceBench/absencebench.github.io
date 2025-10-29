@@ -2,51 +2,27 @@
 const exampleTasks = [
   {
     id: 1,
-    type: "arguments",
-    title: "Missing Function Parameter",
-    description: "Identify which required parameter is missing from this function call.",
-    example: "def calculate_total(items, tax_rate):\n    return sum(items) * (1 + tax_rate)\n\n# Function call:\ntotal = calculate_total([10, 20, 30])\n# What's missing?",
-    category: "arguments"
+    type: "poetry",
+    title: "Missing Line in Poetry",
+    description: "Identify what line is missing from this poem.",
+    example: "Original:\n...And so, to you, who always were\nTo me, I give these weedy rhymes\nIn memory of early times...\n\nModified:\n...And so, to you, who always were\nIn memory of early times...\n\nWhat line is missing?",
+    category: "poetry"
   },
   {
     id: 2,
-    type: "context",
-    title: "Missing Background Context",
-    description: "What crucial information is missing to understand this statement?",
-    example: "She decided not to attend the meeting because of the incident.\n\n# What context is missing?",
-    category: "context"
+    type: "numerical",
+    title: "Missing Numbers in Sequence",
+    description: "Identify which numbers are missing from this sequence.",
+    example: "Original:\n117, 121, 125, 129, 133, 137 ...\n\nModified:\n117, 125, 129, 133 ...\n\nWhat numbers are missing?",
+    category: "numerical"
   },
   {
     id: 3,
-    type: "steps",
-    title: "Missing Procedural Step",
-    description: "Identify which step is missing from this recipe.",
-    example: "1. Preheat oven to 350°F\n2. Mix flour, sugar, and eggs\n3. Bake for 25 minutes\n4. Let cool and serve\n\n# What step is missing?",
-    category: "steps"
-  },
-  {
-    id: 4,
-    type: "definitions",
-    title: "Undefined Term",
-    description: "Which term is used without definition?",
-    example: "The algorithm uses memoization to improve performance by caching results in a DAG structure.\n\n# What term needs definition?",
-    category: "definitions"
-  },
-  {
-    id: 5,
-    type: "arguments",
-    title: "Incomplete API Call",
-    description: "What required field is missing from this API request?",
-    example: "POST /api/users\n{\n  'username': 'john_doe',\n  'email': 'john@example.com'\n}\n\n# Missing required field?",
-    category: "arguments"
-  },
-  {
-    id: 6,
-    type: "context",
-    title: "Ambiguous Reference",
-    description: "What information is needed to understand this reference?",
-    example: "Based on the previous results, we adjusted the parameters accordingly.\n\n# What's missing?",
-    category: "context"
+    type: "github",
+    title: "Missing Code in GitHub PR",
+    description: "Identify what code line is missing from this pull request.",
+    example: "Original:\n...\n+ $replacements = [\n+   '[' => '\\[',\n+   '<' => '&lt;',\n+   '>' => '&gt;',\n+ ];\n\nModified:\n...\n+ $replacements = [\n+   '[' => '\\[',\n+   '>' => '&gt;',\n+ ];\n\nWhat line is missing?",
+    category: "github"
   }
 ];
 

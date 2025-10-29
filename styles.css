@@ -47,7 +47,7 @@
   .site-header > .wrap{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 2rem 0.8rem 2rem}
 
   .brand{text-decoration:none;display:flex;align-items:center;gap:0.6rem;font-size:1.5rem}
-  .brand-logo{color:var(--orange);font-family:'Courier New', monospace;font-weight:700;font-size:2rem;letter-spacing:-0.5px}
+  .brand-logo{color:var(--orange);font-family:'Courier New', monospace;font-weight:700;font-size:2.5rem;letter-spacing:-0.5px}
   .brand-separator{color:var(--orange);font-weight:400;margin:0 0.4rem;font-size:1.8rem}
   .brand-title{color:var(--text);font-weight:400;font-size:1.5rem}
 
