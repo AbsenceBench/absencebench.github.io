@@ -92,18 +92,3 @@ function renderLeaderboard() {
 // Initialize
 renderExamples(exampleTasks);
 renderLeaderboard();
-
-// Tab filtering for examples
-document.querySelectorAll('.tab').forEach(btn => {
-  btn.addEventListener('click', e => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.dataset.cat;
-    if (cat === 'all') {
-      renderExamples(exampleTasks);
-    } else {
-      renderExamples(exampleTasks.filter(task => task.category === cat));
-    }
-  });
-});
-  
